@@ -17,11 +17,23 @@ public class Sorts{
     }
   }
 
-<<<<<<< HEAD
-  public static void insertionSort (int[] data) {
-=======
   public static void selectionSort(int[] data) {
->>>>>>> ff9ddf22a930e1c1a9d33bf7e8286087c76a254c
+   for (int i = 0; i < data.length -1; i++) {
+     int start = i;
+
+     for (int j = i + 1; j < data.length; j++){
+       if (data[j] < data[start]) {
+         start = j;
+       }
+     }
+
+     int temp = data[start];
+     data[start] = data[i];
+     data[i] = temp;
+   }
+  }
+
+  public static void insertionSort (int[] data) {
     int index = 0;
     for (int i = 0; i < data.length; i++)  {
       int temp = data[i];
