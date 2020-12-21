@@ -17,7 +17,7 @@ public class Sorts{
     }
   }
 
-  public static void insertionSort(int[] data) {
+  public static void selectionSort(int[] data) {
     int index = 0;
     for (int i = 0; i < data.length; i++)  {
       int temp = data[i];
